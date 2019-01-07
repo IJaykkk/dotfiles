@@ -1,7 +1,7 @@
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{paths, bindkey, exports, functions, prompt_pure}; do
+for file in ~/.{paths,bindkey,exports,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
@@ -16,6 +16,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(zsh-autosuggestions vi-mode autojump)
+
+# this goes before oh-my-zsh.sh is sourced
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
@@ -119,3 +122,6 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# prompt pure
+source .prompt_pure
