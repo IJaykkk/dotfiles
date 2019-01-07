@@ -1,8 +1,8 @@
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{paths,bindkey,exports,functions}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+for file in ~/.{paths,exports,functions}; do
+	source "$file";
 done;
 
 # zsh-completions
@@ -123,5 +123,6 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-# prompt pure
-source .prompt_pure
+for file in ~/.{bindkey,prompt_pure}; do
+	source "$file";
+done;
