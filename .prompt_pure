@@ -1,4 +1,2 @@
 autoload -U promptinit; promptinit
 prompt pure
-prompt username
-DEFAULT_USER=`whoami`
