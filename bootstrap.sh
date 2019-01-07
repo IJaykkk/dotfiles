@@ -7,6 +7,11 @@ function copyFiles() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+
+  cd ~
+  rm -rf .vim
+  git clone https://github.com/IJaykkk/vim-setting.git ~/.vim
+  vim +PlugClean +PlugInstall +qall
 }
 
 function brewInstall() {
