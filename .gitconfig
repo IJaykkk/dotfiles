@@ -1,6 +1,6 @@
 [alias]
 	c = commit -am
-	s = status
+	st = status
 	amend = commit --amend --all
 	co = checkout
 	df = diff --color --color-words --abbrev
