@@ -32,6 +32,8 @@ function brewInstall() {
 function npmInstall() {
   # install prompt pure
   npm install --global pure-prompt
+  # vim markdown dependency
+  npm install -g livedown
 }
 
 function beautify() {
