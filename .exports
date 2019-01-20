@@ -9,5 +9,8 @@ export EDITOR=vim
 #Let's reduce after you hit the <ESC> key delay to 0.1 seconds.
 export KEYTIMEOUT=1
 
+# JAVA_HOME
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home"
+
 # Python startup script
-export PYTHONSTARTUP='.pythonstartup.py'
+export PYTHONSTARTUP=$HOME/.pythonstartup.py
