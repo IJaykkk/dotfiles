@@ -8,3 +8,6 @@ export EDITOR=vim
 
 #Let's reduce after you hit the <ESC> key delay to 0.1 seconds.
 export KEYTIMEOUT=1
+
+# Python startup script
+export PYTHONSTARTUP='.pythonstartup.py'
