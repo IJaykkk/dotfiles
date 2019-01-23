@@ -1,7 +1,7 @@
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{paths,exports,functions}; do
+for file in ~/.{paths,exports,functions,alias}; do
 	source "$file";
 done;
 

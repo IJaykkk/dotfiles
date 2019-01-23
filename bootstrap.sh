@@ -25,7 +25,13 @@ function brewInstall() {
   brew install tmux
   brew install ctags
   brew install ack
-  brew install autojump
+
+  # install cask, which extends homebrew
+  brew tap caskroom/cask
+
+  # install sourcetree
+  brew cask install sourcetree
+
   # install java and maven
   brew cask install java
   brew install maven
