@@ -26,6 +26,9 @@ function brewInstall() {
   brew install ctags
   brew install ack
   brew install autojump
+  # install java and maven
+  brew cask install java
+  brew install maven
 }
 
 function npmInstall() {

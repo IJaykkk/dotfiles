@@ -10,7 +10,7 @@ export EDITOR=vim
 export KEYTIMEOUT=1
 
 # JAVA_HOME
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home"
 
 # Python startup script
 export PYTHONSTARTUP=$HOME/.pythonstartup.py
