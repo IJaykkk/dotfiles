@@ -63,6 +63,10 @@ function misc() {
 
   # neoplete dependency
   pip3 install neovim
+  # setuptools and wheel
+  pip3 install setuptools wheel twine
+  # virtualenv
+  pip3 install virtualenv
 }
 
 copyFiles;
