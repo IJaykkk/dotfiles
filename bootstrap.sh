@@ -25,6 +25,7 @@ function brewInstall() {
   brew install tmux
   brew install ctags
   brew install ack
+  sudo easy_install pip
 
   # install cask, which extends homebrew
   brew tap caskroom/cask
@@ -35,6 +36,9 @@ function brewInstall() {
   # install java and maven
   brew cask install java
   brew install maven
+
+  # install autojump
+  brew install autojump
 }
 
 function npmInstall() {
@@ -55,12 +59,6 @@ function beautify() {
 }
 
 function misc() {
-  # Python
-  unlink /usr/local/bin/python
-  ln -s /usr/local/bin/python3 /usr/local/bin/python
-  unlink /usr/local/bin/pip
-  ln -s /usr/local/bin/pip3 /usr/local/bin/pip
-
   # neoplete dependency
   pip3 install neovim
   # setuptools and wheel
