@@ -22,13 +22,14 @@ function brewInstall() {
   brew install git
   brew install npm
   brew install zsh
-  brew install tmux
   brew install ctags
   brew install ack
+  brew install pyenv
+  brew install pyenv-virtualenv
   sudo easy_install pip
 
   # install cask, which extends homebrew
-  brew tap caskroom/cask
+  brew tap homebrew/cask-cask
 
   # install sourcetree
   brew cask install sourcetree
@@ -59,24 +60,20 @@ function beautify() {
 }
 
 function misc() {
-  # neoplete dependency
-  pip3 install neovim
   # setuptools and wheel
   pip3 install setuptools wheel twine
-  # virtualenv
-  pip3 install virtualenv
 }
 
-copyFiles;
 brewInstall;
+copyFiles;
 npmInstall;
 beautify;
 misc;
 
 source ~/.zshrc
 
-unset copyFiles;
 unset brewInstall;
+unset copyFiles;
 unset npmInstall;
 unset beautify;
 unset misc;
